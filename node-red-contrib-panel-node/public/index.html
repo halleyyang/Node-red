@@ -10,33 +10,9 @@
 <div id="container" style="width: 550px; height: 400px; margin: 0 auto"></div>
 <script language="JavaScript">
 
-function sendWarningMail() {
-      var nodemailer = require('nodemailer');
-      var transport = nodemailer.createTransport({
-      host:"smtp.qq.com",
-      secureConnection: true,
-      port:465,
-      auth:{
-            user:"648712402@qq.com",
-            pass:"enfzveyfvldfbffh"
-         }
-      });
-      var mailOptions = {
-         from: "648712402@qq.com",
-         to: "yangsh12@lenovo.com",
-         subject:"test",
-         text:"warning",
-         html:"<b>warning</b>"
-      };
-      transport.sendMail(mailOptions,null);
-}
-
 function getinfo(){
    $.ajax({url:"/myui",success:function(result){
       cpu = result.cpu;
-      // if (result.cpu>0.9) {
-      //    sendWarningMail();
-      // }
       document.getElementById("one").value=result.cpu;       
    }});
 }
