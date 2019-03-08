@@ -1,0 +1,16 @@
+{
+  "name": "os-info",
+  "node-red": {
+    "nodes": {
+      "os-info": "os-info.js"
+    }
+  },
+  "version": "1.0.0",
+  "main": "os-info.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

@@ -1,0 +1,16 @@
+{
+  "name": "panel-node",
+  "version": "1.0.0",
+  "node-red": {
+    "nodes": {
+      "panel-node": "panel-node.js"
+    }
+  },
+  "description": "",
+  "main": "panel-node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

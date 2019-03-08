@@ -1,0 +1,26 @@
+<script type="text/javascript">
+    RED.nodes.registerType('os-info',{
+        category: 'myNode',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "file.png",
+        label: function() {
+            return this.name||"os-info";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="os-info">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="os-info">
+    <p>A simple node that provides system load averages</p>
+</script>
